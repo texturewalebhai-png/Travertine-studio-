@@ -1,408 +1,510 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Travertine Studio — natural stone, travertine and elegant home decor inspiration.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Travertine Studio | Natural Stone & Home Decor</title>
+
+<meta name="description" content="Discover elegant travertine stone, natural stone decor, travertine tables, tiles and timeless home design inspiration.">
 
 <style>
 :root{
---ink:#302a26;
---muted:#6e655d;
---cream:#f5efe5;
---sand:#e9dece;
---card:#fffdf9;
---brown:#4b4037;
---line:#ddd1c1;
---max:1180px;
---radius:26px
+  --ink:#302a26;
+  --muted:#6e655d;
+  --cream:#f5efe5;
+  --sand:#e9dece;
+  --card:#fffdf9;
+  --brown:#4b4037;
+  --line:#ddd1c1;
+  --max:1180px;
+  --radius:26px;
 }
 
 *{
-box-sizing:border-box;
-margin:0;
-padding:0
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
-scroll-behavior:smooth
+  scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-color:var(--ink);
-background:var(--cream);
-line-height:1.65
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.65;
 }
 
 a{
-text-decoration:none;
-color:inherit
-}
-
-.container{
-width:min(var(--max),92%);
-margin:auto
+  text-decoration:none;
+  color:inherit;
 }
 
 img{
-width:100%;
-display:block
+  width:100%;
+  display:block;
 }
 
+.container{
+  width:min(var(--max),92%);
+  margin:auto;
+}
+
+/* HEADER */
+
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(255,253,249,.96);
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line)
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,253,249,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
 }
 
 .nav{
-min-height:76px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:28px
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
 }
 
 .logo{
-font-size:22px;
-font-weight:800;
-letter-spacing:2px
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:2px;
 }
 
 .nav-links{
-display:flex;
-gap:28px;
-font-size:14px;
-font-weight:700
+  display:flex;
+  gap:28px;
+  font-size:14px;
+  font-weight:600;
 }
 
 .nav-links a:hover{
-opacity:.6
+  opacity:.6;
 }
 
-.menu{
-display:none;
-border:0;
-background:none;
-font-size:28px;
-cursor:pointer
-}
+/* HERO */
 
 .hero{
-min-height:650px;
-display:flex;
-align-items:center;
-background:
-linear-gradient(
-90deg,
-rgba(245,239,229,.97),
-rgba(245,239,229,.84) 42%,
-rgba(245,239,229,.3)
-),
-url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
-center/cover
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(rgba(245,239,229,.78),rgba(245,239,229,.9)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
 }
 
 .hero-content{
-padding:90px 0;
-max-width:650px
+  max-width:760px;
+  padding:90px 0;
 }
 
-.eyebrow{
-color:var(--muted);
-letter-spacing:5px;
-text-transform:uppercase;
-font-size:14px;
-font-weight:700;
-margin-bottom:20px
+.kicker{
+  font-size:15px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:22px;
+  font-weight:600;
 }
 
-h1{
-font-size:clamp(52px,7vw,88px);
-line-height:.98;
-letter-spacing:-3px;
-margin-bottom:28px
+.hero h1{
+  font-size:clamp(48px,7vw,86px);
+  line-height:.98;
+  letter-spacing:-3px;
+  margin-bottom:28px;
 }
 
 .hero p{
-color:var(--muted);
-font-size:20px;
-max-width:610px;
-margin-bottom:34px
+  max-width:700px;
+  font-size:20px;
+  color:var(--muted);
+  margin-bottom:34px;
 }
 
 .buttons{
-display:flex;
-gap:14px;
-flex-wrap:wrap
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
 .btn{
-display:inline-flex;
-justify-content:center;
-align-items:center;
-min-height:56px;
-padding:0 28px;
-border-radius:12px;
-font-weight:800;
-transition:.2s
+  display:inline-block;
+  padding:16px 28px;
+  border-radius:12px;
+  font-weight:700;
+  border:1px solid var(--brown);
+  transition:.25s;
 }
 
 .btn-dark{
-background:var(--brown);
-color:#fff
+  background:var(--brown);
+  color:white;
 }
 
 .btn-light{
-border:2px solid #9b9186;
-background:rgba(255,253,249,.7)
+  background:rgba(255,255,255,.75);
 }
 
 .btn:hover{
-transform:translateY(-2px)
+  transform:translateY(-2px);
 }
 
-section{
-padding:90px 0
+/* INTRO */
+
+.intro{
+  text-align:center;
+  padding:90px 20px 50px;
 }
 
-.section-head{
-text-align:center;
-max-width:720px;
-margin:0 auto 48px
+.intro h2{
+  font-size:clamp(32px,5vw,52px);
+  margin-bottom:15px;
 }
 
-.section-head h2{
-font-size:clamp(38px,5vw,58px);
-line-height:1.05;
-margin-bottom:16px;
-letter-spacing:-1.5px
+.intro p{
+  max-width:700px;
+  margin:auto;
+  font-size:19px;
+  color:var(--muted);
 }
 
-.section-head p{
-color:var(--muted);
-font-size:18px
-}
+/* PRODUCTS */
 
-.products,
-.inspiration{
-background:var(--sand)
+.products{
+  padding:30px 0 100px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:24px
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
 }
 
 .card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:var(--radius);
-overflow:hidden;
-box-shadow:0 8px 28px rgba(62,48,37,.07)
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(60,45,30,.06);
+  transition:.25s;
 }
 
-.card-img{
-aspect-ratio:4/3;
-object-fit:cover
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px rgba(60,45,30,.1);
+}
+
+.card img{
+  height:330px;
+  object-fit:cover;
 }
 
 .card-body{
-padding:30px
+  padding:34px;
 }
 
 .card h3{
-font-size:30px;
-line-height:1.15;
-margin-bottom:14px
+  font-size:30px;
+  margin-bottom:14px;
 }
 
 .card p{
-color:var(--muted);
-font-size:17px;
-margin-bottom:22px
+  color:var(--muted);
+  font-size:17px;
+  margin-bottom:25px;
 }
 
-.arrow{
-font-weight:800
+.card-link{
+  font-weight:700;
+  font-size:16px;
 }
 
-.ideas{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
+/* FEATURE */
+
+.feature{
+  padding:100px 0;
+  background:var(--sand);
 }
 
-.idea{
-background:#fffdf9;
-border:1px solid var(--line);
-border-radius:22px;
-padding:34px
+.feature-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:55px;
 }
 
-.idea h3{
-font-size:26px;
-margin-bottom:12px
+.feature img{
+  border-radius:var(--radius);
+  min-height:500px;
+  object-fit:cover;
 }
 
-.idea p{
-color:var(--muted)
+.feature-text h2{
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.05;
+  margin-bottom:22px;
 }
+
+.feature-text p{
+  font-size:18px;
+  color:var(--muted);
+  margin-bottom:25px;
+}
+
+/* COLLECTIONS */
+
+.collections{
+  padding:100px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:55px;
+}
+
+.section-title h2{
+  font-size:clamp(38px,5vw,60px);
+  margin-bottom:12px;
+}
+
+.section-title p{
+  color:var(--muted);
+  font-size:18px;
+}
+
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
+}
+
+.collection{
+  position:relative;
+  min-height:360px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#ddd;
+}
+
+.collection img{
+  height:100%;
+  min-height:360px;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.collection:hover img{
+  transform:scale(1.04);
+}
+
+.collection-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding:35px;
+  background:linear-gradient(transparent,rgba(25,20,16,.72));
+  color:white;
+}
+
+.collection-overlay h3{
+  font-size:32px;
+  margin-bottom:6px;
+}
+
+/* ABOUT */
 
 .about{
-background:#faf6ee
+  padding:100px 20px;
+  background:#eee3d4;
+  text-align:center;
 }
 
-.about-wrap{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center
-}
-
-.about-img{
-border-radius:var(--radius);
-overflow:hidden;
-box-shadow:0 15px 40px rgba(62,48,37,.12)
+.about-inner{
+  max-width:800px;
+  margin:auto;
 }
 
 .about h2{
-font-size:clamp(40px,5vw,62px);
-line-height:1.05;
-margin-bottom:22px
+  font-size:clamp(38px,5vw,60px);
+  margin-bottom:20px;
 }
 
 .about p{
-color:var(--muted);
-font-size:18px;
-margin-bottom:18px
+  font-size:19px;
+  color:var(--muted);
+  margin-bottom:28px;
 }
 
+/* CTA */
+
 .cta{
-background:var(--brown);
-color:#fff;
-text-align:center
+  padding:100px 20px;
+  background:var(--brown);
+  color:white;
+  text-align:center;
 }
 
 .cta h2{
-font-size:clamp(40px,5vw,60px);
-line-height:1.05;
-margin-bottom:18px
+  font-size:clamp(38px,5vw,62px);
+  margin-bottom:18px;
 }
 
 .cta p{
-color:#eee5db;
-font-size:18px;
-max-width:680px;
-margin:0 auto 28px
+  max-width:650px;
+  margin:0 auto 30px;
+  color:#e9e0d6;
+  font-size:18px;
 }
+
+.cta .btn{
+  border-color:white;
+}
+
+/* FOOTER */
 
 footer{
-background:#332c27;
-color:#eee5db;
-padding:36px 0
+  background:#302a26;
+  color:#ddd2c6;
+  padding:55px 0 25px;
 }
 
-.footer{
-display:flex;
-justify-content:space-between;
-gap:20px;
-align-items:center
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  padding-bottom:40px;
 }
 
-.footer small{
-color:#c8bdb2
+.footer-logo{
+  font-size:23px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:white;
+  margin-bottom:15px;
 }
+
+footer h4{
+  color:white;
+  margin-bottom:15px;
+}
+
+footer a{
+  display:block;
+  margin-bottom:8px;
+  color:#ddd2c6;
+}
+
+footer a:hover{
+  color:white;
+}
+
+.copyright{
+  border-top:1px solid rgba(255,255,255,.15);
+  padding-top:22px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* MOBILE */
 
 @media(max-width:850px){
 
-.menu{
-display:block
+  .nav{
+    min-height:70px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    min-height:620px;
+  }
+
+  .hero-content{
+    padding:70px 0;
+  }
+
+  .hero h1{
+    font-size:54px;
+    letter-spacing:-2px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .card img{
+    height:300px;
+  }
+
+  .feature-box{
+    grid-template-columns:1fr;
+  }
+
+  .feature img{
+    min-height:350px;
+  }
+
+  .collection-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
 }
 
-.nav-links{
-display:none;
-position:absolute;
-top:68px;
-left:0;
-right:0;
-padding:18px 4%;
-background:#fffdf9;
-border-bottom:1px solid var(--line);
-flex-direction:column;
-align-items:flex-start
-}
+@media(max-width:500px){
 
-.nav-links.open{
-display:flex
-}
+  .container{
+    width:90%;
+  }
 
-.grid,
-.ideas{
-grid-template-columns:1fr
-}
+  .hero{
+    min-height:600px;
+  }
 
-.about-wrap{
-grid-template-columns:1fr
-}
+  .hero h1{
+    font-size:47px;
+  }
 
-.hero{
-min-height:700px
-}
+  .kicker{
+    font-size:12px;
+    letter-spacing:3px;
+  }
 
-.hero-content{
-padding:80px 0
-}
+  .intro{
+    padding-top:65px;
+  }
 
-h1{
-font-size:58px;
-letter-spacing:-2px
-}
+  .card-body{
+    padding:28px;
+  }
 
-}
+  .card h3{
+    font-size:27px;
+  }
 
-@media(max-width:520px){
-
-.container{
-width:92%
-}
-
-.logo{
-font-size:19px
-}
-
-h1{
-font-size:49px
-}
-
-.eyebrow{
-letter-spacing:3px;
-font-size:12px
-}
-
-.btn{
-width:100%
-}
-
-.card-body{
-padding:26px
-}
-
-.card h3{
-font-size:27px
-}
-
-.footer{
-flex-direction:column;
-align-items:flex-start
-}
-
+  .feature,
+  .collections,
+  .about,
+  .cta{
+    padding:70px 0;
+  }
 }
 </style>
 </head>
@@ -410,339 +512,340 @@ align-items:flex-start
 <body>
 
 <header>
-<div class="container nav">
+  <div class="container nav">
+    <a href="#" class="logo">TRAVERTINE STUDIO</a>
 
-<a class="logo" href="#home">
-TRAVERTINE STUDIO
-</a>
-
-<button class="menu" aria-label="Open menu" onclick="toggleMenu()">
-☰
-</button>
-
-<nav class="nav-links" id="navLinks">
-
-<a href="#home" onclick="closeMenu()">Home</a>
-
-<a href="#products" onclick="closeMenu()">Products</a>
-
-<a href="#inspiration" onclick="closeMenu()">Inspiration</a>
-
-<a href="#about" onclick="closeMenu()">About</a>
-
-<a href="#contact" onclick="closeMenu()">Contact</a>
-
-</nav>
-
-</div>
+    <nav class="nav-links">
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
-
 
 <main>
 
-<section class="hero" id="home">
+<!-- HERO -->
 
-<div class="container">
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
 
-<div class="hero-content">
+      <div class="kicker">
+        Natural Stone • Home Decor • Inspiration
+      </div>
 
-<div class="eyebrow">
-Natural Stone • Home Decor • Inspiration
-</div>
+      <h1>
+        Timeless Stone.<br>
+        Beautiful Spaces.
+      </h1>
 
-<h1>
-Timeless Stone.<br>
-Beautiful Spaces.
-</h1>
+      <p>
+        Discover elegant travertine products, natural stone decor
+        and timeless ideas designed to bring warmth and character
+        to modern and classic homes.
+      </p>
 
-<p>
-Discover elegant travertine surfaces, sculptural stone tables and natural-stone decor ideas designed to bring warmth and character to modern and classic homes.
-</p>
+      <div class="buttons">
+        <a href="#collections" class="btn btn-dark">
+          Explore Products
+        </a>
 
-<div class="buttons">
+        <a href="#inspiration" class="btn btn-light">
+          Get Inspired
+        </a>
+      </div>
 
-<a class="btn btn-dark" href="#products">
-Explore Products
-</a>
-
-<a class="btn btn-light" href="#inspiration">
-Get Inspired
-</a>
-
-</div>
-
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
+<!-- INTRO -->
 
-<section class="products" id="products">
+<section class="intro">
+  <div class="container">
 
-<div class="container">
+    <h2>Natural Beauty, Made Timeless.</h2>
 
-<div class="section-head">
+    <p>
+      Timeless materials and elegant pieces for beautiful interiors.
+      Explore travertine, natural stone and warm home decor inspiration.
+    </p>
 
-<h2>
-Natural Materials.<br>
-Elegant Interiors.
-</h2>
-
-<p>
-Timeless materials and elegant pieces for beautiful interiors.
-</p>
-
-</div>
-
-
-<div class="grid">
-
-
-<article class="card">
-
-<img
-class="card-img"
-src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
-alt="Elegant modern living room"
->
-
-<div class="card-body">
-
-<h3>
-Travertine Tiles
-</h3>
-
-<p>
-Elegant natural stone surfaces for floors, walls and timeless interiors.
-</p>
-
-<a class="arrow" href="#contact">
-Explore Collection →
-</a>
-
-</div>
-</article>
-
-
-
-<article class="card">
-
-<img
-class="card-img"
-src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=85"
-alt="Warm natural living room"
->
-
-<div class="card-body">
-
-<h3>
-Travertine Tables
-</h3>
-
-<p>
-Sculptural stone tables that add a refined natural touch to your living room.
-</p>
-
-<a class="arrow" href="#contact">
-Explore Collection →
-</a>
-
-</div>
-</article>
-
-
-
-<article class="card">
-
-<img
-class="card-img"
-src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
-alt="Natural stone inspired home decor"
->
-
-<div class="card-body">
-
-<h3>
-Natural Stone Decor
-</h3>
-
-<p>
-Beautiful trays, accessories and decor pieces inspired by natural stone.
-</p>
-
-<a class="arrow" href="#contact">
-Explore Collection →
-</a>
-
-</div>
-</article>
-
-
-</div>
-</div>
+  </div>
 </section>
 
+<!-- PRODUCTS -->
 
-<section class="inspiration" id="inspiration">
+<section class="products" id="collections">
+  <div class="container">
 
-<div class="container">
+    <div class="grid">
 
-<div class="section-head">
+      <article class="card">
 
-<h2>
-Travertine Inspiration
-</h2>
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+          alt="Elegant travertine tile interior"
+        >
 
-<p>
-Simple ideas for creating warm, elegant and timeless spaces.
-</p>
+        <div class="card-body">
 
-</div>
+          <h3>Travertine Tiles</h3>
 
+          <p>
+            Elegant natural stone surfaces for floors,
+            walls and timeless interiors.
+          </p>
 
-<div class="ideas">
+          <a href="#inspiration" class="card-link">
+            Explore Collection →
+          </a>
 
-
-<article class="idea">
-
-<h3>
-Warm Minimalism
-</h3>
-
-<p>
-Combine soft neutral colors with travertine textures for a calm and sophisticated interior.
-</p>
-
-</article>
+        </div>
+      </article>
 
 
-<article class="idea">
+      <article class="card">
 
-<h3>
-Natural Materials
-</h3>
+        <img
+          src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+          alt="Travertine table in modern living room"
+        >
 
-<p>
-Pair natural stone with wood, linen and soft lighting for a welcoming home.
-</p>
+        <div class="card-body">
 
-</article>
+          <h3>Travertine Tables</h3>
 
+          <p>
+            Sculptural stone tables that add a refined
+            natural touch to your living room.
+          </p>
 
-<article class="idea">
+          <a href="#inspiration" class="card-link">
+            Explore Collection →
+          </a>
 
-<h3>
-Timeless Design
-</h3>
-
-<p>
-Travertine adds character that works beautifully with both modern and classic styles.
-</p>
-
-</article>
+        </div>
+      </article>
 
 
-</div>
-</div>
+      <article class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+          alt="Natural stone home decor"
+        >
+
+        <div class="card-body">
+
+          <h3>Natural Stone Decor</h3>
+
+          <p>
+            Beautiful trays, accessories and decor pieces
+            inspired by natural stone.
+          </p>
+
+          <a href="#inspiration" class="card-link">
+            Explore Collection →
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
+<!-- FEATURE -->
+
+<section class="feature" id="inspiration">
+
+  <div class="container feature-box">
+
+    <img
+      src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=85"
+      alt="Luxury natural stone interior"
+    >
+
+    <div class="feature-text">
+
+      <div class="kicker">
+        Travertine Inspiration
+      </div>
+
+      <h2>
+        Warm textures.<br>
+        Natural character.
+      </h2>
+
+      <p>
+        Travertine brings a soft, organic feeling to interiors.
+        Its natural variations make every surface unique while
+        keeping the overall space elegant and timeless.
+      </p>
+
+      <a href="#about" class="btn btn-dark">
+        Discover Travertine
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COLLECTION VISUALS -->
+
+<section class="collections">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Designed for Beautiful Living</h2>
+
+      <p>
+        Natural materials that work beautifully in modern,
+        classic and contemporary spaces.
+      </p>
+    </div>
+
+    <div class="collection-grid">
+
+      <div class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1400&q=85"
+          alt="Modern natural stone living room"
+        >
+
+        <div class="collection-overlay">
+          <div>
+            <h3>Modern Interiors</h3>
+            <p>Clean lines with natural stone character.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
+          alt="Natural stone home design"
+        >
+
+        <div class="collection-overlay">
+          <div>
+            <h3>Timeless Spaces</h3>
+            <p>Warm materials made for lasting beauty.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
-<div class="container about-wrap">
+  <div class="about-inner">
 
+    <div class="kicker">
+      About Travertine Studio
+    </div>
 
-<div class="about-img">
+    <h2>Nature at the Heart of Design.</h2>
 
-<img
-src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
-alt="Beautiful natural stone interior"
->
+    <p>
+      Travertine Studio celebrates the beauty of natural stone
+      and thoughtful home design. From elegant surfaces to
+      sculptural furniture and decor, our inspiration is rooted
+      in warmth, texture and timeless simplicity.
+    </p>
 
-</div>
+    <a href="#contact" class="btn btn-dark">
+      Learn More
+    </a>
 
+  </div>
 
-<div>
-
-<h2>
-About Travertine Studio
-</h2>
-
-<p>
-Travertine Studio is a destination for natural-stone inspiration, travertine products and beautiful home decor ideas.
-</p>
-
-<p>
-Our goal is to help homeowners discover elegant materials and create spaces that feel warm, refined and timeless.
-</p>
-
-<a class="btn btn-dark" href="#contact">
-Learn More
-</a>
-
-</div>
-
-</div>
 </section>
 
+<!-- CTA -->
 
 <section class="cta" id="contact">
 
-<div class="container">
+  <div class="container">
 
-<h2>
-Bring Natural Beauty Home
-</h2>
+    <h2>Bring Natural Beauty Home.</h2>
 
-<p>
-Discover beautiful travertine ideas and carefully selected natural-stone products for modern living.
-</p>
+    <p>
+      Explore timeless travertine ideas and discover inspiration
+      for your next beautiful interior.
+    </p>
 
-<div class="buttons" style="justify-content:center">
+    <a href="#collections" class="btn">
+      Explore Collection
+    </a>
 
-<a class="btn btn-light" href="mailto:hello@travertinestudio.com">
-Contact Us
-</a>
+  </div>
 
-<a class="btn btn-light" href="#products">
-View Collections
-</a>
-
-</div>
-
-</div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 
 <footer>
 
-<div class="container footer">
+  <div class="container">
 
-<strong>
-TRAVERTINE STUDIO
-</strong>
+    <div class="footer-grid">
 
-<small>
-© 2026 Travertine Studio. Natural stone & home decor inspiration.
-</small>
+      <div>
+        <div class="footer-logo">
+          TRAVERTINE STUDIO
+        </div>
 
-</div>
+        <p>
+          Natural stone, timeless interiors and
+          beautiful home decor inspiration.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+
+        <a href="#collections">Collections</a>
+        <a href="#inspiration">Inspiration</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div>
+        <h4>Categories</h4>
+
+        <a href="#collections">Travertine Tiles</a>
+        <a href="#collections">Travertine Tables</a>
+        <a href="#collections">Natural Stone Decor</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Travertine Studio. All rights reserved.
+    </div>
+
+  </div>
 
 </footer>
 
-
-<script>
-
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("open")
-}
-
-function closeMenu(){
-document.getElementById("navLinks").classList.remove("open")
-}
-
-</script>
-
 </body>
-  </html>
+</html>
